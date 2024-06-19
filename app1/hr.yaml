@@ -14,4 +14,4 @@ spec:
       interval: 10m
   values:
     name: Vektorka
-    age: 92
+    age: 93
