@@ -14,6 +14,6 @@ spec:
         namespace: flux-system
       interval: 1m
   values:
-    title: kofibrek
+    title: Welcome rathadm
     fqdn: majo.k3z.eu
-    color2: hotpink
+    color2: yellow
