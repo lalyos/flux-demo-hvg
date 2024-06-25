@@ -1,0 +1,19 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: kofibrek
+spec:
+  targetNamespace: kofibrek
+  interval: 1m
+  chart:
+    spec:
+      chart: charts/12factor
+      sourceRef:
+        kind: GitRepository
+        name: lalyos
+        namespace: flux-system
+      interval: 1m
+  values:
+    title: kofibrek
+    fqdn: majo.k3z.eu
+    color2: hotpink
